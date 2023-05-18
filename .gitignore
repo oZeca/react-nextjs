@@ -8,8 +8,8 @@
 # testing
 /coverage
 #cypress
-/videos
-/screenshots
+/cypress/videos
+/cypress/screenshots
 cypress.env.json
 
 
