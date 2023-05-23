@@ -1,3 +1,7 @@
+/* eslint-disable */
+// Disable ESLint to prevent failing linting inside the Next.js repo.
+// If you're using ESLint on your project, we recommend installing the ESLint Cypress plugin instead:
+// https://github.com/cypress-io/eslint-plugin-cypress
 import Home from "./page"
 
 describe("Renders Home", () => {
@@ -15,3 +19,6 @@ describe("Renders Home", () => {
     ).should("be.visible")
   })
 })
+
+// Prevent TypeScript from reading file as legacy script
+export {}
