@@ -1,4 +1,4 @@
-FROM node:18.16.0
+FROM node:18.16.0 
 
 WORKDIR /src/app
 
@@ -8,6 +8,7 @@ RUN npm ci
 
 COPY src ./src
 COPY public ./public
+COPY jest.config.mjs .
 COPY next.config.js .
 COPY postcss.config.js .
 COPY tailwind.config.js .

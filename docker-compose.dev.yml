@@ -18,7 +18,15 @@ services:
     networks:
       - my_network
 
-  # Add more containers below (nginx, postgres, etc.)
+  tests:
+    build:
+      context: ./
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./src:/app/src
+      - ./public:/app/public
+    command: npm run test
+
 
 # Define a network, which allows containers to communicate
 # with each other, by using their container name as a hostname

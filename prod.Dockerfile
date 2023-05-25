@@ -12,7 +12,6 @@ RUN npm ci
 
 COPY src ./src
 COPY public ./public
-COPY cypress ./cypress
 COPY next.config.js .
 COPY postcss.config.js .
 COPY tailwind.config.js .
