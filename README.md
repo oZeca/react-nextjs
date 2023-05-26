@@ -1,3 +1,10 @@
+Docker hot reload bug:
+https://github.com/vercel/next.js/issues/36774
+> It turns out that I reinstall my windows Docker Desktop with Hyper-v but not WSL2 solved this problem. This problem is caused by a WSL2 bug that still exists here: microsoft/WSL#4739 (comment)
+This way doesn't need to change the config and we can still use the SWC compiler.
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
